@@ -98,8 +98,8 @@ public class Counters {
 
         @Override
         public String toString() {
-            return String.format("%,d files, %,d directories, %,d bytes", Long.valueOf(fileCounter.get()),
-                Long.valueOf(directoryCounter.get()), Long.valueOf(byteCounter.get()));
+            return String.format("%,d files, %,d directories, %,d bytes", fileCounter.get(),
+                    directoryCounter.get(), byteCounter.get());
         }
 
     }
@@ -141,7 +141,7 @@ public class Counters {
 
         @Override
         public Long getLong() {
-            return Long.valueOf(value.longValueExact());
+            return value.longValueExact();
         }
 
         @Override
@@ -263,7 +263,7 @@ public class Counters {
 
         @Override
         public Long getLong() {
-            return Long.valueOf(value);
+            return value;
         }
 
         @Override

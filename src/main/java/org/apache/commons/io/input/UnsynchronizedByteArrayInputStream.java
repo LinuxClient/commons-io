@@ -68,7 +68,6 @@ public class UnsynchronizedByteArrayInputStream extends InputStream {
         this.data = Objects.requireNonNull(data);
         this.offset = 0;
         this.eod = data.length;
-        this.markedOffset = this.offset;
     }
 
     /**

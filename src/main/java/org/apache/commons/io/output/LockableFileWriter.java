@@ -269,7 +269,7 @@ public class LockableFileWriter extends Writer {
 
         } catch (final IOException | RuntimeException ex) {
             FileUtils.deleteQuietly(lockFile);
-            if (fileExistedAlready == false) {
+            if (!fileExistedAlready) {
                 FileUtils.deleteQuietly(file);
             }
             throw ex;

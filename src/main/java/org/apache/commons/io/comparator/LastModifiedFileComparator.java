@@ -70,8 +70,7 @@ public class LastModifiedFileComparator extends AbstractFileComparator implement
             return -1;
         } else if (result > 0) {
             return 1;
-        } else {
-            return 0;
         }
+        return 0;
     }
 }
